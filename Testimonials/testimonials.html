@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+
+    <link rel="stylesheet" href="testimonials.css">
+    <title>Testimonies</title>
+</head>
+
+<body>
+    <div id="cardContainer">
+
+    </div>
+    <div class="addTestimonial"></div>
+    <div id="addTestimonial">
+        <i class="fa-solid fa-circle-plus"></i>
+    </div>
+
+
+    <div id="myModal" class="modal">
+        <div class="modalContent">
+            <form action="" class="formModal">
+                <div class="addContainer">
+                    <label for="name">Name<span class="red">*</span></label>
+                    <input id="name" name="name" type="text" required></input>
+                    <span id="noName" class="red required">Required</span>
+                </div>
+                <div class="addContainer">
+                    <label for="location">Location<span class="red">*</label>
+                    <input id="location" type="text"></input>
+                    <span id="noLocation" class="red required">Required</span>
+                </div>
+                <div class="addContainer">
+                    <label for="rating">Rating<span class="red">*</label>
+                    <input id="rating" type="text"></input>
+                    <span id="noRating" class="red required">Required</span>
+
+                </div>
+                <div class="addContainer">
+                    <label for="message">Testimonial<span class="red">*</label>
+                    <textarea id="message" name="message" rows="4" cols="50"></textarea>
+                    <span id="noMessage" class="red required">Required</span>
+
+                </div>
+                <div class="btnContainer">
+                    <button id="cancel" type="button">Cancel</button>
+                    <button id="add" type="button">Add</button>
+                    
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+</body>
+<script src="testimonials.js"></script>
+
+</html>
